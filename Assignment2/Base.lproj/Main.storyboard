@@ -8,6 +8,43 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="rTQ-zO-VGG">
+            <objects>
+                <viewController id="rLD-Pv-d7l" customClass="ViewController" customModule="Assignment2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tWo-nj-QuM">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BC1-d5-cE9">
+                                <rect key="frame" x="162" y="250" width="94" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Movie"/>
+                                <connections>
+                                    <action selector="goToMoviesTapped:" destination="rLD-Pv-d7l" eventType="touchUpInside" id="FqP-xU-JAy"/>
+                                    <segue destination="YeY-sd-ykK" kind="show" identifier="" id="V78-H4-rFa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zwx-Tp-fLm">
+                                <rect key="frame" x="156" y="409" width="122" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Cinema"/>
+                                <connections>
+                                    <action selector="goToCinemasTapped:" destination="rLD-Pv-d7l" eventType="touchUpInside" id="o7A-xY-fhk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="K6a-Uj-O9e"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="C4c-nh-2Wh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fER-rf-Q55" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-86.25954198473282" y="-725.35211267605632"/>
+        </scene>
         <!--Movies Table View Controller-->
         <scene sceneID="AjU-It-rML">
             <objects>
@@ -154,12 +191,12 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </toolbar>
                     <connections>
-                        <segue destination="YeY-sd-ykK" kind="relationship" relationship="rootViewController" id="XNR-H3-GBP"/>
+                        <segue destination="rLD-Pv-d7l" kind="relationship" relationship="rootViewController" id="wGE-1a-fQn"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GTl-P2-mHh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-532" y="-27"/>
+            <point key="canvasLocation" x="-1076" y="-719"/>
         </scene>
     </scenes>
     <resources>

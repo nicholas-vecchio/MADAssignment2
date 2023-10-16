@@ -23,6 +23,7 @@
 		E2A667042AD402A400671FEF /* Movie+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A667002AD402A300671FEF /* Movie+CoreDataClass.swift */; };
 		E2A667052AD402A400671FEF /* Movie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A667012AD402A300671FEF /* Movie+CoreDataProperties.swift */; };
 		E2A667072AD4030600671FEF /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A667062AD4030600671FEF /* MovieDetailsViewController.swift */; };
+		E2AAE1AE2AD7C3C90085EDC7 /* CinemaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AAE1AD2AD7C3C90085EDC7 /* CinemaTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		E2A667002AD402A300671FEF /* Movie+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataClass.swift"; sourceTree = "<group>"; };
 		E2A667012AD402A300671FEF /* Movie+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		E2A667062AD4030600671FEF /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
+		E2AAE1AD2AD7C3C90085EDC7 /* CinemaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 				E22136562AD2A96500AF3C84 /* Info.plist */,
 				E22136802AD2B4D700AF3C84 /* MovieTableViewController.swift */,
 				E2A667062AD4030600671FEF /* MovieDetailsViewController.swift */,
+				E2AAE1AD2AD7C3C90085EDC7 /* CinemaTableViewController.swift */,
 			);
 			path = Assignment2;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 			files = (
 				E2A667072AD4030600671FEF /* MovieDetailsViewController.swift in Sources */,
 				E2A667042AD402A400671FEF /* Movie+CoreDataClass.swift in Sources */,
+				E2AAE1AE2AD7C3C90085EDC7 /* CinemaTableViewController.swift in Sources */,
 				E221364A2AD2A95C00AF3C84 /* ViewController.swift in Sources */,
 				E2A667032AD402A400671FEF /* Cinema+CoreDataProperties.swift in Sources */,
 				E22136462AD2A95A00AF3C84 /* AppDelegate.swift in Sources */,
