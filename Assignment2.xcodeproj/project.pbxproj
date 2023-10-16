@@ -17,11 +17,12 @@
 		E221366A2AD2A96700AF3C84 /* Assignment2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22136692AD2A96700AF3C84 /* Assignment2UITests.swift */; };
 		E221366C2AD2A96800AF3C84 /* Assignment2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E221366B2AD2A96800AF3C84 /* Assignment2UITestsLaunchTests.swift */; };
 		E22136812AD2B4D700AF3C84 /* MovieTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22136802AD2B4D700AF3C84 /* MovieTableViewController.swift */; };
-		E2A666E52AD3FC7000671FEF /* Assignment2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E2A666E32AD3FC7000671FEF /* Assignment2.xcdatamodeld */; };
-		E2A667022AD402A400671FEF /* Cinema+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A666FE2AD402A100671FEF /* Cinema+CoreDataClass.swift */; };
-		E2A667032AD402A400671FEF /* Cinema+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A666FF2AD402A200671FEF /* Cinema+CoreDataProperties.swift */; };
-		E2A667042AD402A400671FEF /* Movie+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A667002AD402A300671FEF /* Movie+CoreDataClass.swift */; };
-		E2A667052AD402A400671FEF /* Movie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A667012AD402A300671FEF /* Movie+CoreDataProperties.swift */; };
+		E28730632ADD1A2700E72C36 /* CinemaDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28730622ADD1A2700E72C36 /* CinemaDetailsViewController.swift */; };
+		E28730682ADD247100E72C36 /* Movie+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28730642ADD246E00E72C36 /* Movie+CoreDataClass.swift */; };
+		E28730692ADD247100E72C36 /* Movie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28730652ADD246E00E72C36 /* Movie+CoreDataProperties.swift */; };
+		E287306A2ADD247100E72C36 /* Cinema+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28730662ADD247000E72C36 /* Cinema+CoreDataClass.swift */; };
+		E287306B2ADD247100E72C36 /* Cinema+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28730672ADD247000E72C36 /* Cinema+CoreDataProperties.swift */; };
+		E287306C2ADD272000E72C36 /* Assignment2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E2A666E32AD3FC7000671FEF /* Assignment2.xcdatamodeld */; };
 		E2A667072AD4030600671FEF /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A667062AD4030600671FEF /* MovieDetailsViewController.swift */; };
 		E2AAE1AE2AD7C3C90085EDC7 /* CinemaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AAE1AD2AD7C3C90085EDC7 /* CinemaTableViewController.swift */; };
 /* End PBXBuildFile section */
@@ -58,11 +59,12 @@
 		E22136692AD2A96700AF3C84 /* Assignment2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment2UITests.swift; sourceTree = "<group>"; };
 		E221366B2AD2A96800AF3C84 /* Assignment2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment2UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E22136802AD2B4D700AF3C84 /* MovieTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewController.swift; sourceTree = "<group>"; };
+		E28730622ADD1A2700E72C36 /* CinemaDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaDetailsViewController.swift; sourceTree = "<group>"; };
+		E28730642ADD246E00E72C36 /* Movie+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E28730652ADD246E00E72C36 /* Movie+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E28730662ADD247000E72C36 /* Cinema+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cinema+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E28730672ADD247000E72C36 /* Cinema+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cinema+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		E2A666E42AD3FC7000671FEF /* Assignment2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Assignment2.xcdatamodel; sourceTree = "<group>"; };
-		E2A666FE2AD402A100671FEF /* Cinema+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cinema+CoreDataClass.swift"; sourceTree = "<group>"; };
-		E2A666FF2AD402A200671FEF /* Cinema+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cinema+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		E2A667002AD402A300671FEF /* Movie+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataClass.swift"; sourceTree = "<group>"; };
-		E2A667012AD402A300671FEF /* Movie+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		E2A667062AD4030600671FEF /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
 		E2AAE1AD2AD7C3C90085EDC7 /* CinemaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -95,10 +97,10 @@
 		E22136392AD2A95800AF3C84 = {
 			isa = PBXGroup;
 			children = (
-				E2A666FE2AD402A100671FEF /* Cinema+CoreDataClass.swift */,
-				E2A666FF2AD402A200671FEF /* Cinema+CoreDataProperties.swift */,
-				E2A667002AD402A300671FEF /* Movie+CoreDataClass.swift */,
-				E2A667012AD402A300671FEF /* Movie+CoreDataProperties.swift */,
+				E28730642ADD246E00E72C36 /* Movie+CoreDataClass.swift */,
+				E28730652ADD246E00E72C36 /* Movie+CoreDataProperties.swift */,
+				E28730662ADD247000E72C36 /* Cinema+CoreDataClass.swift */,
+				E28730672ADD247000E72C36 /* Cinema+CoreDataProperties.swift */,
 				E22136442AD2A95900AF3C84 /* Assignment2 */,
 				E221365E2AD2A96500AF3C84 /* Assignment2Tests */,
 				E22136682AD2A96600AF3C84 /* Assignment2UITests */,
@@ -130,6 +132,7 @@
 				E22136802AD2B4D700AF3C84 /* MovieTableViewController.swift */,
 				E2A667062AD4030600671FEF /* MovieDetailsViewController.swift */,
 				E2AAE1AD2AD7C3C90085EDC7 /* CinemaTableViewController.swift */,
+				E28730622ADD1A2700E72C36 /* CinemaDetailsViewController.swift */,
 			);
 			path = Assignment2;
 			sourceTree = "<group>";
@@ -283,15 +286,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2A667072AD4030600671FEF /* MovieDetailsViewController.swift in Sources */,
-				E2A667042AD402A400671FEF /* Movie+CoreDataClass.swift in Sources */,
 				E2AAE1AE2AD7C3C90085EDC7 /* CinemaTableViewController.swift in Sources */,
+				E287306B2ADD247100E72C36 /* Cinema+CoreDataProperties.swift in Sources */,
+				E287306C2ADD272000E72C36 /* Assignment2.xcdatamodeld in Sources */,
 				E221364A2AD2A95C00AF3C84 /* ViewController.swift in Sources */,
-				E2A667032AD402A400671FEF /* Cinema+CoreDataProperties.swift in Sources */,
 				E22136462AD2A95A00AF3C84 /* AppDelegate.swift in Sources */,
-				E2A667052AD402A400671FEF /* Movie+CoreDataProperties.swift in Sources */,
-				E2A667022AD402A400671FEF /* Cinema+CoreDataClass.swift in Sources */,
+				E28730682ADD247100E72C36 /* Movie+CoreDataClass.swift in Sources */,
+				E287306A2ADD247100E72C36 /* Cinema+CoreDataClass.swift in Sources */,
+				E28730632ADD1A2700E72C36 /* CinemaDetailsViewController.swift in Sources */,
+				E28730692ADD247100E72C36 /* Movie+CoreDataProperties.swift in Sources */,
 				E22136482AD2A95B00AF3C84 /* SceneDelegate.swift in Sources */,
-				E2A666E52AD3FC7000671FEF /* Assignment2.xcdatamodeld in Sources */,
 				E22136812AD2B4D700AF3C84 /* MovieTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -2,7 +2,7 @@
 //  Movie+CoreDataProperties.swift
 //  Assignment2
 //
-//  Created by Nicholas on 9/10/2023.
+//  Created by Nicholas on 16/10/2023.
 //
 //
 
@@ -16,12 +16,12 @@ extension Movie {
         return NSFetchRequest<Movie>(entityName: "Movie")
     }
 
-    @NSManaged public var id: Int32
-    @NSManaged public var title: String?
     @NSManaged public var cast: String?
-    @NSManaged public var poster: String?
     @NSManaged public var directors: String?
+    @NSManaged public var id: Int32
+    @NSManaged public var poster: String?
     @NSManaged public var releaseDate: Date?
+    @NSManaged public var title: String?
     @NSManaged public var cinemas: NSSet?
 
 }

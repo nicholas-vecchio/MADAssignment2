@@ -2,7 +2,7 @@
 //  Cinema+CoreDataProperties.swift
 //  Assignment2
 //
-//  Created by Nicholas on 9/10/2023.
+//  Created by Nicholas on 16/10/2023.
 //
 //
 
@@ -18,6 +18,7 @@ extension Cinema {
 
     @NSManaged public var id: Int32
     @NSManaged public var location: String?
+    @NSManaged public var name: String?
     @NSManaged public var movies: NSSet?
 
 }

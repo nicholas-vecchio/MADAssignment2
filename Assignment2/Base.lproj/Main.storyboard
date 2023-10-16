@@ -8,6 +8,57 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Cinema Table View Controller-->
+        <scene sceneID="njF-ez-V3X">
+            <objects>
+                <tableViewController id="9xq-hE-Q1R" customClass="CinemaTableViewController" customModule="Assignment2" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="LTQ-eK-QHS">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CinemaCell" id="ysk-EO-1hg">
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ysk-EO-1hg" id="Eb4-iT-3et">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="9xq-hE-Q1R" id="xJ7-TQ-wHE"/>
+                            <outlet property="delegate" destination="9xq-hE-Q1R" id="BdH-L3-I5b"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="tMS-Do-qfd">
+                        <barButtonItem key="rightBarButtonItem" title="Add" id="Cwd-Lv-7W3">
+                            <connections>
+                                <segue destination="ugZ-Tb-jD2" kind="show" identifier="showDetailController" id="rkp-br-hVe"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gl8-Yx-CLm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="581" y="-1439"/>
+        </scene>
+        <!--Cinema Details View Controller-->
+        <scene sceneID="Aj3-8c-Dd5">
+            <objects>
+                <viewController id="ugZ-Tb-jD2" customClass="CinemaDetailsViewController" customModule="Assignment2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a9l-vb-qFM">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="HrX-35-FHD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="NSb-fD-Eit"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8UU-0e-drk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1526" y="-1419"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="rTQ-zO-VGG">
             <objects>
@@ -16,23 +67,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="out-mg-xD5">
+                                <rect key="frame" x="156" y="427" width="82" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Cinema"/>
+                                <connections>
+                                    <segue destination="9xq-hE-Q1R" kind="show" id="oBa-gg-DNK"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BC1-d5-cE9">
-                                <rect key="frame" x="162" y="250" width="94" height="55"/>
+                                <rect key="frame" x="150" y="250" width="94" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Movie"/>
                                 <connections>
                                     <action selector="goToMoviesTapped:" destination="rLD-Pv-d7l" eventType="touchUpInside" id="FqP-xU-JAy"/>
                                     <segue destination="YeY-sd-ykK" kind="show" identifier="" id="V78-H4-rFa"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zwx-Tp-fLm">
-                                <rect key="frame" x="156" y="409" width="122" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Cinema"/>
-                                <connections>
-                                    <action selector="goToCinemasTapped:" destination="rLD-Pv-d7l" eventType="touchUpInside" id="o7A-xY-fhk"/>
                                 </connections>
                             </button>
                         </subviews>
