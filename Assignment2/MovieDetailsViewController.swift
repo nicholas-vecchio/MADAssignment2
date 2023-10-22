@@ -24,27 +24,36 @@ class MovieDetailsViewController: UIViewController, UIImagePickerControllerDeleg
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         titleTextField.text = selectedMovie.title
         directorsTextField.text = selectedMovie.directors
         datePicker.date = selectedMovie.releaseDate ?? Date()
         castTextField.text = selectedMovie.cast
-
-        if let imageName = selectedMovie.poster, let image = UIImage(named: imageName) {
-            imageView.image = image
+        
+        if let imageName = selectedMovie.poster {
+            let imagePath = getDocumentsDirectory().appendingPathComponent("\(imageName).png")
+            imageView.image = UIImage(contentsOfFile: imagePath.path)
         }
     }
 
     @IBAction func saveButtonPressed(_ sender: UIBarButtonItem) {
-        selectedMovie.title = titleTextField.text
-        selectedMovie.directors = directorsTextField.text
+        guard let title = titleTextField.text, !title.isEmpty,
+              let directors = directorsTextField.text, !directors.isEmpty,
+              let cast = castTextField.text, !cast.isEmpty else {
+            showAlert(withTitle: "Missing Information", message: "Please fill out all fields.")
+            return
+        }
+        
+        selectedMovie.title = title
+        selectedMovie.directors = directors
         selectedMovie.releaseDate = datePicker.date
-        selectedMovie.cast = castTextField.text
+        selectedMovie.cast = cast
 
         if let image = imageView.image, let imageData = image.pngData() {
-            let filename = getDocumentsDirectory().appendingPathComponent("\(selectedMovie.id).png")
-            try? imageData.write(to: filename)
-            selectedMovie.poster = "\(selectedMovie.id)"
+            let filename = "\(UUID().uuidString).png"
+            let filePath = getDocumentsDirectory().appendingPathComponent(filename)
+            try? imageData.write(to: filePath)
+            selectedMovie.poster = filename
         }
 
         do {
@@ -54,6 +63,7 @@ class MovieDetailsViewController: UIViewController, UIImagePickerControllerDeleg
             showAlert(withTitle: "Error", message: "Error saving movie details.")
         }
     }
+
 
     @IBAction func chooseImageButtonPressed(_ sender: UIButton) {
         let picker = UIImagePickerController()

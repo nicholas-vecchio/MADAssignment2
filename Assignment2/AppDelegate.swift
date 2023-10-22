@@ -2,8 +2,9 @@
 //  AppDelegate.swift
 //  Assignment2
 //
-//  Created by Nicholas on 8/10/2023.
+//  Created by Nicholas on 22/10/2023.
 //
+
 
 import UIKit
 import CoreData
@@ -78,4 +79,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 }
-
